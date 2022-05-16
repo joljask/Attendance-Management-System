@@ -1,0 +1,51 @@
+body{
+    background-color: floralwhite;
+}
+
+.card {
+    padding:50px;
+    background-color: rgb(226, 229, 230);
+}
+
+a{
+    text-decoration: none;
+}
+
+.test{
+    padding-left: 200px;
+}
+
+.panel{
+    background-color: floralwhite;
+}
+.page-title  {
+    color: white;
+}
+
+.form-css {
+    padding: 100px;
+    background-color:rgb(219, 218, 218);
+   
+}
+
+.form-outer-pad {
+    padding: 20px;
+    background-color:lightsteelblue;
+}
+
+.rohit-suggestion{
+    color: black;
+}
+
+.container-login{
+    background-color: #B9F8D3;
+    padding: 20px;
+}
+
+.login-head{
+    
+    color: black;
+    margin-left: 100px;
+    margin-top: 30px;
+    padding-left: 100px;
+}

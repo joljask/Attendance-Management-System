@@ -1,0 +1,16 @@
+.mark-table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mark-td, .mark-th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.mark-tr:nth-child(even) {
+  background-color: #dddddd;
+}
+

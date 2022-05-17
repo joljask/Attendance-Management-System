@@ -1,0 +1,75 @@
+body{
+    background-color: whitesmoke;
+    
+}
+
+
+
+.content{
+    background-color: #f7e6b5;
+    width:50%;
+    border-radius: 15px;
+
+}
+
+.content-detail{
+    background-color:steelblue;
+    margin-top:50px;
+    
+}
+.details{
+    margin-top: 15px;
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.content-table-border{
+    border-right: 2px solid;
+    border-right-color: red;
+    padding: 15px;
+    text-align: center;
+
+
+}
+
+
+.content-table-border-botom{
+    border-bottom: 2px solid;
+    border-bottom-color:#574e6d;
+}
+
+.table-data{
+    text-align: center;
+    padding-left: 20px;
+
+}
+
+.remove-decoration{
+    text-decoration: none;
+}
+
+
+.try {
+    text-align: center;
+    
+}
+.heading-align{
+    margin-top: 15px;
+}
+
+.time-border-right{
+    border-right: 2px solid;
+    border-right-color: royalblue;
+}
+.time-border-right-details{
+    border-right: 2px solid;
+    border-right-color: greenyellow;
+}
+
+.time-border-head{
+    border-top: 2px solid;
+    border-top-color: red;
+
+}
+

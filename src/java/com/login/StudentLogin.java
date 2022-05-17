@@ -71,8 +71,8 @@ public class StudentLogin extends HttpServlet {
                             + "            </div>\n"
                             + "        </form>");
                 } else {
-                    session.setAttribute("email", email);
-                    response.sendRedirect("studentPage.jsp");
+                    session.setAttribute("student_email", email);
+                    response.sendRedirect("StudentPage");
                 }
 
             } else {

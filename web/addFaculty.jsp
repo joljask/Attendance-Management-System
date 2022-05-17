@@ -70,7 +70,7 @@
                     <td>
                         <select id="inputState" class="form-control" name = f_course>
                             <option selected>Choose</option>
-                            <option>AI&ML</option> 
+                            <option>AI & ML</option> 
                             <option>Advance Data Mining</option>
                             <option>Advanced Operating System</option>
                             <option>Cryptography and Network Security</option>

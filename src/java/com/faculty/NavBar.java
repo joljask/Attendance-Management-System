@@ -18,6 +18,10 @@ public class NavBar
                     + "<link rel=\"stylesheet\" href=\"css/mark.css\">\n"
                     + "  <!-- Javascript -->\n"
                     + "  <script src=\"js/admin.js\"></script><!-- comment -->\n"
+                + "<!-- For logout button -->\n" +
+"        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">\n" +
+"        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>\n" +
+"        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js\"></script>"
                     + "  \n"
                     + "        <title>Attendance Portal</title>"
                 + "</head>"
@@ -28,41 +32,25 @@ public class NavBar
                     + "                <td>\n"
                     + "                    <form action=\"ListStudent\" method=\"post\">\n"
                     + "\n"
-                    + "                        <button type=\"submit\" class=\"btn btn-primary\" >List Students</button>\n"
+                    + "                        <button style=\"margin-left: 5px;\" type=\"submit\" class=\"btn btn-primary\" >List Students</button>\n"
                     + "                    </form>\n"
                     + "                </td>\n"
                     + "\n"
                     + "                <td>\n"
                     + "                    <form action=\"MarkPresent\" method=\"post\">\n"
-                    + "                        <button type=\"submit\" class=\"btn btn-primary\" \">Mark Present</button>\n"
+                    + "                        <button style=\"margin-left: 5px;\" type=\"submit\" class=\"btn btn-primary\" \">Mark Present</button>\n"
                     + "                    </form>\n"
-                    + "                </td>\n"
+                    + "                </td>"
+                + "<td>\n" +
+"                    <form action=\"FacultyLogout\" method=\"post\">\n" +
+"            <button  style=\"margin-left: 5px;\" type=\"submit\" class=\"btn btn-danger \">\n" +
+"                <span class=\"glyphicon glyphicon-log-out\"></span> Log out\n" +
+"            </button>\n" +
+"        </form>\n" +
+"                </td>"
+                + "</tr>\n"
                     + "\n"
-              /*      + "                <td>\n"
-                    + "                    <form action=\"addStudent.jsp\" method=\"post\">\n"
-                    + "                        <button type=\"submit\" class=\"btn btn-primary\" >Add Student</button>\n"
-                    + "                    </form>\n"
-                    + "                </td>\n"
-                    + "\n"
-                    + "                <td>\n"
-                    + "                    <form action=\"\" method=\"post\">\n"
-                    + "                        <button type=\"submit\" class=\"btn btn-primary\" onclick=\"openPage('')\">Add Student</button>\n"
-                    + "                    </form>\n"
-                    + "                </td>\n"
-                    + "\n"
-                    + "                <td>\n"
-                    + "                    <form action=\"\" method=\"post\">\n"
-                    + "                        <button type=\"submit\" class=\"btn btn-primary\" onclick=\"openPage('')\">Delete Student</button>\n"
-                    + "                    </form>\n"
-                    + "                </td>\n"
-                    + "\n"
-                    + "                <td>\n"
-                    + "                    <form action=\"\" method=\"post\">\n"
-                    + "                        <button type=\"submit\" class=\"btn btn-primary\" onclick=\"openPage('')\">Edit Student</button>\n"
-                    + "                    </form> \n"
-                    + "                </td>\n"
-                    + "            </tr>\n"
-             */       + "        </table>\n"
+                     + "        </table>\n"
                     + "    </center>";
         
        

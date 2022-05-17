@@ -16,51 +16,55 @@
         <!-- Javascript -->
         <script src="js/admin.js"></script><!-- comment -->
         
+        <!-- For logout button -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
         
 
         <title>Attendance Portal</title>
     </head>
     <body>
+        
+        <%
+            response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+
+            response.setHeader("Pragma", "no-cache");
+            response.setHeader("Expires", "0");
+        %>
+
+        <%
+            if (session.getAttribute("email") == null) {
+                response.sendRedirect("faculty.jsp");
+            }
+
+        %>
+        
     <center>
         <table>
             <tr>
                 <td>
                     <form action="ListStudent" method="post">
 
-                        <button type="submit" class="btn btn-primary" >List Students</button>
+                        <button style="margin-left: 5px;" type="submit" class="btn btn-primary" >List Students</button>
                     </form>
                 </td>
 
                 <td>
                     <form action="MarkPresent" method="post">
-                        <button type="submit" class="btn btn-primary" >Mark Present</button>
+                        <button  style="margin-left: 5px;" type="submit" class="btn btn-primary" >Mark Present</button>
                     </form>
                 </td>
-
                 <td>
-                    <form action="addStudent.jsp" method="post">
-                        <button type="submit" class="btn btn-primary" >Add Student</button>
-                    </form>
+                    <form action="FacultyLogout" method="post">
+            <button  style="margin-left: 5px;" type="submit" class="btn btn-danger ">
+                <span class="glyphicon glyphicon-log-out"></span> Log out
+            </button>
+        </form>
                 </td>
 
-                <td>
-                    <form action="" method="post">
-                        <button type="submit" class="btn btn-primary" onclick="openPage('')">Add Student</button>
-                    </form>
-                </td>
-
-                <td>
-                    <form action="" method="post">
-                        <button type="submit" class="btn btn-primary" onclick="openPage('')">Delete Student</button>
-                    </form>
-                </td>
-
-                <td>
-                    <form action="" method="post">
-                        <button type="submit" class="btn btn-primary" onclick="openPage('')">Edit Student</button>
-                    </form> 
-                </td>
-            </tr>
+                
         </table>
     </center>
 

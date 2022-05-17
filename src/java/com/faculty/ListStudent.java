@@ -30,6 +30,20 @@ public class ListStudent extends HttpServlet {
             NavBar nav  = new NavBar();
             out.println(nav.getNavbar());
 
+           
+            response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+
+            response.setHeader("Pragma", "no-cache");
+            response.setHeader("Expires", "0");
+        
+ 
+        
+            if (session.getAttribute("email") == null) {
+                response.sendRedirect("faculty.jsp");
+            }
+
+        
+                
             String email = (String) session.getAttribute("email");
             System.out.println(email);
             out.println("<br><br><center><h4 style=\"color:red;\">User : " + email + "</h4></center>");
@@ -94,7 +108,7 @@ public class ListStudent extends HttpServlet {
                             + "        </tr>");
 
                 }
-                out.println("</table></center>");
+                out.println("</table></center><br><br>");
 
             } catch (Exception ex) {
                 Logger.getLogger(LoginDao.class.getName()).log(Level.SEVERE, null, ex);

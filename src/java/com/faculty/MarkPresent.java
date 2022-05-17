@@ -29,6 +29,17 @@ public class MarkPresent extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             NavBar nav = new NavBar();
             out.println(nav.getNavbar());
+            
+            response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+
+            response.setHeader("Pragma", "no-cache");
+            response.setHeader("Expires", "0");
+        
+ 
+        
+            if (session.getAttribute("email") == null) {
+                response.sendRedirect("faculty.jsp");
+            }
 
             String email = (String) session.getAttribute("email");
             System.out.println(email);
@@ -113,14 +124,14 @@ public class MarkPresent extends HttpServlet {
 
                 out.println("<tr>\n"
                         + "                    <td colspan=\"4\">\n"
-                        + "                        <button style=\"margin-left: 40%; margin-top:15px\" type=\"button \" class=\"btn btn-success btn-lg btn-block \">\n"
+                        + "                        <button style=\" margin-top:15px\" type=\"button \" class=\"btn btn-success btn-lg btn-block \">\n"
                         + "                            Submit Attendance\n"
                         + "                        </button>\n"
                         + "                    </td>\n"
                         + "                </tr>\n"
                         + "            </form>\n"
                         + "        </table>\n"
-                        + "    </center>");
+                        + "    </center><br><br>");
 
                 //out.println("<br><button type=\"button\" class=\"btn btn-success btn-lg btn-block\">Submit Attendance</button>");
                 //System.out.println("Outside while loop");

@@ -29,15 +29,17 @@
         <title>Attendance Portal</title>
     </head>
     <body>
+        <center>
         <!-- Faculty-->
         <button type="button" class="btn btn-primary" onclick="openPage('addFaculty.jsp')">Add Faculty</button><!-- add faculty -->
-        <button type="button" class="btn btn-primary">Delete Faculty</button><!-- delete faculty -->
-        <button type="button" class="btn btn-primary">Edit Faculty</button><!-- edit faculty -->
-
+        <button type="button" class="btn btn-primary" onclick="openPage('deleteFaculty.jsp')">Delete Faculty</button><!-- delete faculty -->
+        <button type="button" class="btn btn-primary" onclick="openPage('editFaculty.jsp')">Edit Faculty</button><!-- edit faculty -->
+        
         <!-- Student -->
-        <button type="button" class="btn btn-primary">Add Student</button><!-- add student -->
-        <button type="button" class="btn btn-primary">Delete Student</button><!-- delete student -->
-        <button type="button" class="btn btn-primary">Edit Student</button><!-- edit student -->
+        <button type="button" class="btn btn-primary" onclick="openPage('addStudent.jsp')">Add Student</button><!-- add student -->
+        <button type="button" class="btn btn-primary" onclick="openPage('deleteStudent.jsp')">Delete Student</button><!-- delete student -->
+        <button type="button" class="btn btn-primary" onclick="openPage('editStudent.jsp')">Edit Student</button><!-- edit student -->
+    </center>
 
         <!-- main part of edit faculty -->
         <br>

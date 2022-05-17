@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 public class AdminLogout extends HttpServlet {
 
    
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
       HttpSession session = request.getSession();
       session.removeAttribute("emailID");

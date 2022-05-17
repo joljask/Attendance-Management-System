@@ -52,6 +52,19 @@
         <title>Attendance Portal</title>
     </head>
     <body>
+        <%
+            response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+
+            response.setHeader("Pragma", "no-cache");
+            response.setHeader("Expires", "0");
+        %>
+
+        <%
+            if (session.getAttribute("emailID") == null) {
+                response.sendRedirect("admin.jsp");
+            }
+
+        %>
         <div class="card">
             <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
                 <i class="checkmark">✓</i>

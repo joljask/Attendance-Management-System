@@ -29,6 +29,19 @@
         <title>Attendance Portal</title>
     </head>
     <body>
+        <%
+            response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+
+            response.setHeader("Pragma", "no-cache");
+            response.setHeader("Expires", "0");
+        %>
+
+        <%
+            if (session.getAttribute("emailID") == null) {
+                response.sendRedirect("admin.jsp");
+            }
+
+        %>
         <center>
         <!-- Faculty-->
         <button type="button" class="btn btn-primary" onclick="openPage('addFaculty.jsp')">Add Faculty</button><!-- add faculty -->

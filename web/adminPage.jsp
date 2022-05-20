@@ -36,21 +36,46 @@
 
         %>
     <center>
-        <!-- Faculty-->
-        <button type="button" class="btn btn-primary" onclick="openPage('addFaculty.jsp')">Add Faculty</button><!-- add faculty -->
-        <button type="button" class="btn btn-primary" onclick="openPage('deleteFaculty.jsp')">Delete Faculty</button><!-- delete faculty -->
-        <button type="button" class="btn btn-primary" onclick="openPage('editFaculty.jsp')">Edit Faculty</button><!-- edit faculty -->
+        <table>
+            <tr>
+                <td>
+                    <!-- Faculty-->
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('addFaculty.jsp')">Add Faculty</button><!-- add faculty -->
+                </td>
+                <td>
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('deleteFaculty.jsp')">Delete Faculty</button><!-- delete faculty -->
+                </td>
+                <td>
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('editFaculty.jsp')">Edit Faculty</button><!-- edit faculty -->
+                </td>
+                <td>
+                    <!-- Student -->
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('addStudent.jsp')">Add Student</button><!-- add student -->
+                </td>
+                <td>
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('deleteStudent.jsp')">Delete Student</button><!-- delete student -->
+                </td>
+                <td>
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('editStudent.jsp')">Edit Student</button><!-- edit student -->
+                </td>
+                <td>
+                    <form action="AdminLogout" method="post">
+                        <button style="margin-left: 5px;" type="submit" class="btn btn-danger ">
+                            <span class="glyphicon glyphicon-log-out"></span> Log out
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        </table>
 
-        <!-- Student -->
-        <button type="button" class="btn btn-primary" onclick="openPage('addStudent.jsp')">Add Student</button><!-- add student -->
-        <button type="button" class="btn btn-primary" onclick="openPage('deleteStudent.jsp')">Delete Student</button><!-- delete student -->
-        <button type="button" class="btn btn-primary" onclick="openPage('editStudent.jsp')">Edit Student</button><!-- edit student -->
 
-        <form action="AdminLogout" method="post">
-            <button type="submit" class="btn btn-danger btn-lg">
-                <span class="glyphicon glyphicon-log-out"></span> Log out
-            </button>
-        </form>
+
+
+
+
+
+
+
     </center>   
 </body>
 

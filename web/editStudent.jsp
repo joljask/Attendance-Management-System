@@ -13,6 +13,11 @@
 
         <!-- external css -->
         <link rel="stylesheet" href="css/styles.css">
+        
+        <!-- For logout button -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
         <style>
             h5{
@@ -23,6 +28,9 @@
             }
             h6{
                 color:#c42bcf;
+            }
+            .form-table{
+                padding:20px;
             }
         </style>
         <title>Attendance Portal</title>
@@ -43,15 +51,37 @@
 
         %>
         <center>
-        <!-- Faculty-->
-        <button type="button" class="btn btn-primary" onclick="openPage('addFaculty.jsp')">Add Faculty</button><!-- add faculty -->
-        <button type="button" class="btn btn-primary" onclick="openPage('deleteFaculty.jsp')">Delete Faculty</button><!-- delete faculty -->
-        <button type="button" class="btn btn-primary" onclick="openPage('editFaculty.jsp')">Edit Faculty</button><!-- edit faculty -->
-        
-        <!-- Student -->
-        <button type="button" class="btn btn-primary" onclick="openPage('addStudent.jsp')">Add Student</button><!-- add student -->
-        <button type="button" class="btn btn-primary" onclick="openPage('deleteStudent.jsp')">Delete Student</button><!-- delete student -->
-        <button type="button" class="btn btn-primary" onclick="openPage('editStudent.jsp')">Edit Student</button><!-- edit student -->
+        <table>
+            <tr>
+                <td>
+                    <!-- Faculty-->
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('addFaculty.jsp')">Add Faculty</button><!-- add faculty -->
+                </td>
+                <td>
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('deleteFaculty.jsp')">Delete Faculty</button><!-- delete faculty -->
+                </td>
+                <td>
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('editFaculty.jsp')">Edit Faculty</button><!-- edit faculty -->
+                </td>
+                <td>
+                    <!-- Student -->
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('addStudent.jsp')">Add Student</button><!-- add student -->
+                </td>
+                <td>
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('deleteStudent.jsp')">Delete Student</button><!-- delete student -->
+                </td>
+                <td>
+                    <button style="margin-left: 5px;" type="button" class="btn btn-primary" onclick="openPage('editStudent.jsp')">Edit Student</button><!-- edit student -->
+                </td>
+                <td>
+                    <form action="AdminLogout" method="post">
+                        <button style="margin-left: 5px;" type="submit" class="btn btn-danger ">
+                            <span class="glyphicon glyphicon-log-out"></span> Log out
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        </table>
     </center>
 
         <!-- main part of edit faculty -->

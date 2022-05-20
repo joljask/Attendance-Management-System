@@ -19,7 +19,7 @@
         <!-- Navigation Bar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
             <div class="container-fluid">
-                <a class="navbar-brand text-dark" href="#">Attendance Portal</a>
+                <a class="navbar-brand " href="#">Attendance Portal</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -84,10 +84,7 @@
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="pass">
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1" >Check me out</label>
-                        </div>
+                        
                         <button type="submit" class="btn btn-primary">Login</button>
                     </form>
                 </div>

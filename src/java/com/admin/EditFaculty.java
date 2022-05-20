@@ -65,23 +65,23 @@ public class EditFaculty extends HttpServlet {
 "            <form action=\"EditInsertFaculty\" method=\"post\" >\n" +
 "\n" +
 "\n" +
-                    "<tr><td><label for=\"inputAddress\">Faculty ID : "+ rs.getString("facultyid")+"</label></td><td><input type=\"hidden\" class=\"form-control\" id=\"inputAddress\"  name=\"f_id\" value = " + rs.getString("facultyid")+"></td></tr>"+
+                    "<tr><td class=\"form-table\"><label for=\"inputAddress\">Faculty ID : "+ rs.getString("facultyid")+"</label></td><td class=\"form-table\"><input type=\"hidden\" class=\"form-control\" id=\"inputAddress\"  name=\"f_id\" value = " + rs.getString("facultyid")+"></td></tr>"+
 "                <tr>\n" +
-"                    <td><label for=\"inputAddress\">First Name</label></td>\n" +
-"                    <td>      <input type=\"text\" class=\"form-control\" placeholder=\"First name\" name=\"f_first_name\" value = "+ rs.getString("firstname")+"> </td>\n" +
-"                    <td><label for=\"inputAddress\">Last Name</label></td>\n" +
-"                    <td><input type=\"text\" class=\"form-control\" placeholder=\"Last name\" name=\"f_last_name\" value = "+ rs.getString("lastname")+">  </td>\n" +
+"                    <td class=\"form-table\"><label for=\"inputAddress\">First Name</label></td>\n" +
+"                    <td class=\"form-table\">      <input type=\"text\" class=\"form-control\" placeholder=\"First name\" name=\"f_first_name\" value = "+ rs.getString("firstname")+"> </td>\n" +
+"                    <td class=\"form-table\"><label for=\"inputAddress\">Last Name</label></td>\n" +
+"                    <td class=\"form-table\"><input type=\"text\" class=\"form-control\" placeholder=\"Last name\" name=\"f_last_name\" value = "+ rs.getString("lastname")+">  </td>\n" +
 "                </tr>\n" +
 "\n" +
 "\n" +
 "\n" +
 "\n" +
 "                <tr>\n" +
-"                    <td><label for=\"inputEmail4\">Email</label></td>\n" +
-"                    <td> <input type=\"email\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"Email\" name=\"f_email\" value = "+ rs.getString("email")+"> </td>\n" +
+"                    <td class=\"form-table\"><label for=\"inputEmail4\">Email</label></td>\n" +
+"                    <td class=\"form-table\"> <input type=\"email\" class=\"form-control\" id=\"inputEmail4\" placeholder=\"Email\" name=\"f_email\" value = "+ rs.getString("email")+"> </td>\n" +
 "\n" +
-"                    <td><label for=\"inputAddress\">Mobile No.</label></td>\n" +
-"                    <td><input type=\"text\" class=\"form-control\" placeholder=\"Mobile Number\" name=\"f_mobile\" value = "+ rs.getString("mobileno")+"></td>\n" +
+"                    <td class=\"form-table\"><label for=\"inputAddress\">Mobile No.</label></td>\n" +
+"                    <td class=\"form-table\"><input type=\"text\" class=\"form-control\" placeholder=\"Mobile Number\" name=\"f_mobile\" value = "+ rs.getString("mobileno")+"></td>\n" +
 "                </tr>\n" +
 "\n" +
 "\n" +
@@ -89,8 +89,8 @@ public class EditFaculty extends HttpServlet {
 "                <tr>\n" +
 
 "\n" +
-"                    <td> <label for=\"inputState\">Select Course</label></td> \n" +
-"                    <td>\n" +
+"                    <td class=\"form-table\"> <label for=\"inputState\">Select Course</label></td> \n" +
+"                    <td class=\"form-table\">\n" +
 "                        <select id=\"inputState\" class=\"form-control\" name = f_course >\n" +
 "                            <option selected>"+ rs.getString("course")+"</option>\n" +
 "                            <option>AI&ML</option> \n" +
@@ -104,21 +104,9 @@ public class EditFaculty extends HttpServlet {
 "                    </td>\n" +
 "                </tr>\n" +
 "\n" +
+"                " +
 "                <tr>\n" +
-"                    \n" +
-"                    <td colspan=\"4\" style=\"padding-left: 200px\">\n" +
-"                        <div class=\"form-group\">\n" +
-"                            <div class=\"form-check\">\n" +
-"                                <input class=\"form-check-input\" type=\"checkbox\" id=\"gridCheck\">\n" +
-"                                <label class=\"form-check-label\" for=\"gridCheck\">\n" +
-"                                    Check if details filled correctly\n" +
-"                                </label>\n" +
-" \n" +
-"                    </td>\n" +
-"                    \n" +
-"                </tr>\n" +
-"                <tr>\n" +
-"                    <th colspan=\"4\" style=\"padding-left: 200px\"><button type=\"submit\" class=\"btn btn-primary\">Save</button></th>\n" +
+"                    <th colspan=\"4\" style=\"padding-left: 300px\"><button type=\"submit\" class=\"btn btn-primary\">Save</button></th>\n" +
 "                </tr>\n" +
 "\n" +
 "            </form>\n" +

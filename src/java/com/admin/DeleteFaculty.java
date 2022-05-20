@@ -74,21 +74,21 @@ public class DeleteFaculty extends HttpServlet {
             
             out.println("<br><br><center><table><form action=\"DeleteSqlFaculty\" method=\"post\">\n" +
 "        <tr>\n" +
-"            <th>Faculty ID</th>\n" +
-"            <th>Email</th>\n" +
-"            <th>First Name</th>\n" +
-"            <th>Last Name</th>\n" +
-"            <th>Course</th>\n" +
-"            <th>Mobile Number</th>\n" +
+"            <th class=\"delete-th\">Faculty ID</th>\n" +
+"            <th class=\"delete-th\">Email</th>\n" +
+"            <th class=\"delete-th\">First Name</th>\n" +
+"            <th class=\"delete-th\">Last Name</th>\n" +
+"            <th class=\"delete-th\">Course</th>\n" +
+"            <th class=\"delete-th\">Mobile Number</th>\n" +
                     "<th style=\"border-right: hidden; border-top: hidden; border-bottom: hidden; \"><input type=\"hidden\" name=\"facultyid\" value=\""+ rs.getString("facultyid")+"\"></th>"+
 "        </tr>\n" +
 "        <tr>\n" +
-"            <td>"+rs.getString("facultyid")+"</td>\n" +
-"            <td>"+rs.getString("email")+"</td>\n" +
-"            <td>"+rs.getString("firstname")+"</td>\n" +
-"            <td>"+rs.getString("lastname")+"</td>\n" +
-"            <td>"+rs.getString("course")+"</td>\n" +
-"            <td>"+rs.getString("mobileno")+"</td>\n" +
+"            <td class=\"delete-td\">"+rs.getString("facultyid")+"</td>\n" +
+"            <td class=\"delete-td\">"+rs.getString("email")+"</td>\n" +
+"            <td class=\"delete-td\">"+rs.getString("firstname")+"</td>\n" +
+"            <td class=\"delete-td\">"+rs.getString("lastname")+"</td>\n" +
+"            <td class=\"delete-td\">"+rs.getString("course")+"</td>\n" +
+"            <td class=\"delete-td\">"+rs.getString("mobileno")+"</td>\n" +
 "            <td style=\"border-right: hidden; border-top: hidden; border-bottom: hidden; \"><button class=\"btn btn-primary\">DELETE</button></td>\n" +
 "        </tr>\n" +
 "    </form></table></center>");
